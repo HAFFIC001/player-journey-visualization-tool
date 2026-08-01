@@ -13,19 +13,13 @@ export default function MapViewport({
 }: Props) {
   return (
     <div className="absolute inset-0 flex items-center justify-center">
-      <div
-        className="
-          relative
-          aspect-square
-          h-full
-          max-h-full
-        "
-      >
+      <div className="relative w-full h-full">
         <Image
           src={image}
           alt="Minimap"
           fill
           priority
+          unoptimized
           className="object-contain select-none"
         />
 
