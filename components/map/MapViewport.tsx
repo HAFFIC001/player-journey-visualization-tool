@@ -21,7 +21,7 @@ export default function MapViewport({
       >
         <img
           src={image}
-          alt="Minimap"
+          alt="minimap"
           className="absolute inset-0 h-full w-full object-contain select-none"
         />
 
