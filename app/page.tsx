@@ -91,7 +91,7 @@ export default function Home() {
         <div className="flex flex-1 flex-col gap-6 overflow-y-auto p-8">
 
           {/* Minimap */}
-          <div className="flex h-[800px] items-center justify-center">
+          <div className="relative h-[800px] w-full">
             <Minimap
               image="/minimaps/AmbroseValley_Minimap.png"
               selectedMatch={selectedMatch}
