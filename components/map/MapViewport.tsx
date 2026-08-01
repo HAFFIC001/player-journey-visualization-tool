@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 type Props = {
   image: string;
   children: React.ReactNode;
@@ -13,14 +11,18 @@ export default function MapViewport({
 }: Props) {
   return (
     <div className="absolute inset-0 flex items-center justify-center">
-      <div className="relative w-full h-full">
-        <Image
+      <div
+        className="
+          relative
+          aspect-square
+          h-full
+          max-h-full
+        "
+      >
+        <img
           src={image}
           alt="Minimap"
-          fill
-          priority
-          unoptimized
-          className="object-contain select-none"
+          className="absolute inset-0 h-full w-full object-contain select-none"
         />
 
         {children}
